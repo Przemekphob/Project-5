@@ -1,0 +1,76 @@
+$osans: 'Open Sans', sans-serif;
+
+p, a, i, h1, h2, h3 {
+	margin: 0;
+	padding: 0;
+}
+
+.sidetext {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	left: 5%;
+	top: 50%;
+	flex: 1;
+	p {
+		transform: rotate(270deg);
+		padding: 15px;
+		font: 12px $osans;
+		font-weight: 600;
+		text-transform: uppercase;
+		color: #FFF;
+	}
+	&__txt {
+		
+	}
+	&__perfect {
+		opacity: 0.5;
+	}
+}
+
+.headlines {
+	color: #FFF;
+	h1 {
+		font: 60px $osans;
+		font-weight: 300;
+	}
+	p {
+		font: 13px $osans;
+		font-weight: 400;
+	}
+}
+
+.jumbotron {
+	background-image: url("../images/topbg.png");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: row;
+	.main {
+		flex: 0.7;
+		display: flex;
+		flex-direction: column;
+		&__logo {
+			flex: 1;
+			padding-bottom: 340px;
+		}
+		&__tiitle {
+			flex: 1;
+			padding-bottom: 340px;
+		}
+	}
+
+	.iphone {
+		flex: 1;
+		img {
+			position: absolute;
+			top: 30%;
+		}
+	}
+}
