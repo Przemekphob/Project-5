@@ -3,13 +3,33 @@ p, a, i, h1, h2, h3 {
   padding: 0;
 }
 
+h2 {
+  font: 35px "Open Sans", sans-serif;
+  font-weight: 300;
+  padding: 50px 15px 15px 15px;
+}
+
+h3 {
+  font: 30px "Open Sans", sans-serif;
+  font-weight: 300;
+  padding: 15px;
+}
+
+h4 {
+  font: 14px "Open Sans", sans-serif;
+  font-weight: 700;
+  padding: 40px 15px 0 15px;
+}
+
+p {
+  padding: 15px;
+  color: #b1b1b1;
+}
+
 .sidetext {
-  display: flex;
-  flex-direction: column;
   position: absolute;
-  left: 5%;
+  left: 0;
   top: 50%;
-  flex: 1;
 }
 
 .sidetext p {
@@ -32,11 +52,13 @@ p, a, i, h1, h2, h3 {
 .headlines h1 {
   font: 60px "Open Sans", sans-serif;
   font-weight: 300;
+  padding: 0 15px;
 }
 
 .headlines p {
   font: 13px "Open Sans", sans-serif;
   font-weight: 400;
+  color: #FFF;
 }
 
 .jumbotron {
@@ -63,6 +85,10 @@ p, a, i, h1, h2, h3 {
   padding-bottom: 340px;
 }
 
+.wrapper .main__logo img {
+  cursor: pointer;
+}
+
 .wrapper .main__tiitle {
   flex: 1;
   padding-bottom: 340px;
@@ -75,6 +101,103 @@ p, a, i, h1, h2, h3 {
 .wrapper .iphone img {
   position: absolute;
   top: 30%;
+}
+
+.text {
+  padding-bottom: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.text__left {
+  flex: 1;
+}
+
+.text__right {
+  padding-top: 20%;
+  flex: 1;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.gallery__item {
+  position: relative;
+}
+
+.gallery__item div {
+  padding: 15px;
+  color: #FFF;
+  position: absolute;
+}
+
+.gallery__item div p {
+  color: #FFF;
+  font: 13px "Open Sans", sans-serif;
+  font-weight: 400;
+}
+
+.fourth {
+  position: relative;
+}
+
+.fourth .sidetext {
+  position: absolute;
+  left: 0;
+  top: 50%;
+}
+
+.fourth .sidetext p {
+  color: #b1b1b1;
+}
+
+.fourth .forcol {
+  padding: 100px 0 150px 0;
+}
+
+.fourth .forcol__columns {
+  display: flex;
+}
+
+.fourth .forcol__columns div {
+  flex: 1;
+}
+
+.fourth .forcol__columns div p {
+  color: #717177;
+  font: 13px "Open Sans", sans-serif;
+  font-weight: 600;
+  padding: 50px 15px 0 15px;
+}
+
+.fourth .forcol__columns div h4 {
+  color: #b1b1b1;
+  padding: 15px 15px 0 15px;
+}
+
+.bigpicture {
+  background-image: url("../images/mainbg2.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.bigpicture .container {
+  padding: 450px 0 120px 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.bigpicture .container .headlines {
+  flex: 0.4;
+}
+
+.bigpicture .container .headlines p {
+  color: #b1b1b1;
 }
 
 /*# sourceMappingURL=style.css.map */
