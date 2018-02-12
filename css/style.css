@@ -145,9 +145,8 @@ p {
 }
 
 .fourth .sidetext {
-  position: absolute;
   left: 0;
-  top: 50%;
+  top: 25%;
 }
 
 .fourth .sidetext p {
@@ -175,6 +174,7 @@ p {
 
 .fourth .forcol__columns div h4 {
   color: #b1b1b1;
+  font-weight: 400;
   padding: 15px 15px 0 15px;
 }
 
@@ -193,11 +193,213 @@ p {
 }
 
 .bigpicture .container .headlines {
-  flex: 0.4;
+  flex: 0.48;
 }
 
 .bigpicture .container .headlines p {
   color: #b1b1b1;
+}
+
+.six {
+  position: relative;
+  background-color: #82ca9c;
+}
+
+.six .sidetext {
+  left: 0;
+  top: 25%;
+}
+
+.six .color {
+  color: #FFF;
+  padding: 100px 0 150px 0;
+}
+
+.six .color__columns {
+  display: flex;
+}
+
+.six .color__columns div {
+  flex: 1;
+}
+
+.six .color__columns div p {
+  color: #FFF;
+  font: 13px "Open Sans", sans-serif;
+  font-weight: 600;
+  padding: 50px 15px 0 15px;
+}
+
+.six .color__columns div h4 {
+  color: #FFF;
+  font-weight: 400;
+  padding: 15px 15px 0 15px;
+}
+
+.seven {
+  background-color: #f6f7fa;
+  position: relative;
+}
+
+.seven .sidetext {
+  left: 0;
+  top: 25%;
+}
+
+.seven .sidetext p {
+  color: #b1b1b1;
+}
+
+.seven .buying {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0 150px 0;
+}
+
+.seven .buying__solo, .seven .buying__team {
+  padding: 50px;
+}
+
+.seven .buying__solo .tittle, .seven .buying__team .tittle {
+  margin: 0 15px 0 15px;
+  display: inline-flex;
+  background-color: #e1e1e1;
+  border-radius: 3px;
+}
+
+.seven .buying__solo .tittle p, .seven .buying__team .tittle p {
+  text-transform: uppercase;
+  font-size: 11px;
+  padding: 5px 10px;
+  color: #FFF;
+}
+
+.seven .buying__solo .icons, .seven .buying__team .icons {
+  display: flex;
+  flex-direction: row;
+}
+
+.seven .buying__solo .icons .fa-apple, .seven .buying__solo .icons .fa-windows, .seven .buying__team .icons .fa-apple, .seven .buying__team .icons .fa-windows {
+  margin: 10px 0 15px 15px;
+  font-size: 30px;
+  color: #717177;
+}
+
+.seven .buying__solo h3, .seven .buying__team h3 {
+  padding: 10px 15px 5px 15px;
+}
+
+.seven .buying__solo h4, .seven .buying__team h4 {
+  padding: 0 15px 0 15px;
+  font-weight: 400;
+}
+
+.seven .buying__solo button, .seven .buying__team button {
+  padding: 12px 30px;
+  border: none;
+  border-radius: 3px;
+  margin: 15px;
+  text-transform: uppercase;
+  background-color: #82ca9c;
+  color: #FFF;
+}
+
+.seven .buying__solo h4 {
+  color: #717177;
+}
+
+.seven .buying__team {
+  background-color: #FFF;
+}
+
+.seven .buying__team .tittle {
+  background-color: #bd8cbf;
+}
+
+.eight {
+  background-color: #192431;
+  padding: 100px 0 125px 0;
+}
+
+.eight .footers {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.eight .footers__left, .eight .footers__right {
+  flex: 1;
+}
+
+.eight .footers__left h4, .eight .footers__right h4 {
+  font: 13px "Open Sans", sans-serif;
+  font-weight: 600;
+  color: #b1b1b1;
+}
+
+.eight .footers__left p, .eight .footers__right p {
+  font: 13px "Open Sans", sans-serif;
+  font-weight: 400;
+}
+
+.eight .footers__left {
+  display: flex;
+  flex-direction: column;
+  padding-right: 50px;
+}
+
+.eight .footers__left .col-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.eight .footers__left .col-wrapper div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.eight .footers__left .col-wrapper div p {
+  padding: 2px 15px;
+}
+
+.eight .footers__right {
+  padding-left: 50px;
+}
+
+.eight .footers__right .input-wrapper__row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 3px;
+  padding-top: 10px;
+}
+
+.eight .footers__right .input-wrapper__row input {
+  width: 100%;
+  border: none;
+  margin-left: 15px;
+}
+
+.eight .footers__right .input-wrapper__row .icon {
+  display: flex;
+  padding: 22px;
+  background-color: #82ca9c;
+}
+
+.eight .footers__right .input-wrapper__row .icon .fa-check {
+  color: #FFF;
+  font-size: 24px;
+}
+
+.eight .footers__right p {
+  padding-right: 150px;
+  font: 12px "Open Sans", sans-serif;
+  font-weight: 400;
+  color: #57697f;
 }
 
 /*# sourceMappingURL=style.css.map */
