@@ -1,0 +1,108 @@
+.seven {
+	background-color: $bglightgrey;
+	position: relative;
+	.sidetext {
+		left: 0;
+		top: 25%;
+		p {
+			color: $greyfont;
+		}
+	}
+	.buying {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 100px 0 150px 0;
+
+		&__solo, &__team {
+			padding: 50px;
+			.tittle {
+				margin: 0 15px 0 15px;
+				display: inline-flex;
+				background-color: $btnbg;
+				border-radius: 3px;
+
+				p {
+					text-transform: uppercase;
+					font-size: 11px;
+					padding: 5px 10px;
+					color: #FFF;
+				}
+			}
+			.icons {
+				display: flex;
+				flex-direction: row;
+				.fa-apple, .fa-windows {
+					margin: 10px 0 15px 15px;
+					font-size: 30px;
+					color: $darkgreyfont;
+				}
+
+			}
+			h3 {
+				padding: 10px 15px 5px 15px;
+			}
+			h4 {
+				padding: 0 15px 0 15px; 
+				font-weight: 400;
+			}
+			button {
+				padding: 12px 30px;
+				border: none;
+				border-radius: 3px;
+				margin: 15px;
+				text-transform: uppercase;
+				background-color: $cyan;
+				color: #FFF;
+			}			
+		}
+
+		&__solo {
+			h4 {
+				color: $darkgreyfont;
+			}
+
+		}
+
+		&__team {
+			background-color: #FFF;
+			.tittle {
+				background-color: $purple;
+			}
+		}
+	}
+}
+
+@media(min-width: 992px) and (max-width: 1199px) {
+
+	.seven {
+		.buying {
+			padding: 100px 75px 150px 75px;
+		}
+	}
+
+}
+
+@media(min-width: 768px) and (max-width: 991px)  { 
+
+	.seven {
+		.buying {
+			padding: 75px 25px 100px 25px;
+		}
+	}
+
+}
+
+@media(max-width: 767px) {
+
+	.seven {
+		.buying {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			padding: 25px 0 25px 0;
+		}
+	}
+
+}

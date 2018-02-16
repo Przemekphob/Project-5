@@ -1,0 +1,40 @@
+.headlines {
+	color: #FFF;
+	h1 {
+		font: 60px $osans;
+		font-weight: 300;
+		padding: 0 15px;
+	}
+	p {
+		font: 13px $osans;
+		font-weight: 400;
+		color: #FFF;
+	}
+}
+
+@media(min-width: 992px) and (max-width: 1199px) {
+
+}
+
+@media(min-width: 768px) and (max-width: 991px)  { 
+
+
+}
+
+@media(max-width: 767px) {
+
+	.headlines {
+		color: #FFF;
+		h1 {
+			font: 30px $osans;
+			font-weight: 300;
+			padding: 0 15px;
+		}
+		p {
+			font: 13px $osans;
+			font-weight: 400;
+			color: #FFF;
+		}
+	}
+
+}

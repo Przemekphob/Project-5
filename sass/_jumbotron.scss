@@ -1,0 +1,134 @@
+.jumbotron {
+	background-image: url("../images/topbg.png");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 100vh;
+
+	.wrapper {
+		display: flex;
+		flex-direction: row;
+		.main {
+			flex: 0.75;
+			display: flex;
+			flex-direction: column;
+			&__logo {
+				flex: 1;
+				padding-bottom: 340px;
+				img {
+					cursor: pointer;
+				}
+			}
+			&__tiitle {
+				flex: 1;
+				padding-bottom: 340px;
+			}
+		}
+
+		.iphone {
+			flex: 1.1;
+			img {
+				position: absolute;
+				height: 100%;
+				top: 30%;
+			}
+		}
+	}
+
+}
+
+@media(min-width: 992px) and (max-width: 1199px) {
+
+	.jumbotron {
+		.wrapper {
+			.main {
+				flex: 1;
+				padding-left: 75px;
+				&__logo {
+					flex: 1;
+					padding-bottom: 330px;
+					img {
+						cursor: pointer;
+					}
+				}
+				&__tiitle {
+					flex: 2;
+					
+				}
+			}
+			.iphone {
+				flex: 1;
+				img {
+					top: 5%;
+					left: 25%;
+				}
+			}
+		}
+	}
+}
+
+@media(min-width: 768px) and (max-width: 991px)  { 
+
+	.jumbotron {
+		height: 50vh;
+
+		.wrapper {
+			.main {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				&__logo {
+					flex: 1;
+					padding-bottom: 100px;
+					img {
+						cursor: pointer;
+					}
+				}
+				&__tiitle {
+					flex: 1;
+					padding-bottom: 25px;
+				}
+			}
+
+			.iphone {
+				flex: 0;
+				display: none;
+			}
+		}
+	}
+}
+
+@media(max-width: 767px) {
+
+	.jumbotron {
+	height: 50vh;
+		.wrapper {
+			.main {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				flex: 1;
+				&__logo {
+					flex: 1;
+					padding-bottom: 100px;
+					img {
+						cursor: pointer;
+					}
+				}
+				&__tiitle {
+					flex: 1;
+					padding-bottom: 25px;
+					text-align: center;
+				}
+			}
+
+			.iphone {
+				flex: 0;
+				display: none;
+			}
+		}
+	}
+}
