@@ -79,13 +79,14 @@ p {
 	background-size: cover;
 	background-repeat: no-repeat;
 	width: 100%;
+	height: 100vh;
 }
 
 .wrapper {
 	display: flex;
 	flex-direction: row;
 	.main {
-		flex: 0.7;
+		flex: 0.75;
 		display: flex;
 		flex-direction: column;
 		&__logo {
@@ -102,9 +103,10 @@ p {
 	}
 
 	.iphone {
-		flex: 1;
+		flex: 1.1;
 		img {
 			position: absolute;
+			height: 100%;
 			top: 30%;
 		}
 	}
@@ -133,7 +135,9 @@ p {
 
 	&__item {
 		position: relative;
-		
+		img {
+			width: 100%;
+		}		
 		div {
 			padding: 15px;
 			color: #FFF;
@@ -366,7 +370,7 @@ p {
 					}
 					.icon {
 						display: flex;
-						padding: 22px;
+						padding: 10px;
 						background-color: $cyan;
 						.fa-check {
 							color: #FFF;
@@ -386,4 +390,366 @@ p {
 		}
 
 	}
+}
+
+@media(min-width: 992px) and (max-width: 1199px) {
+
+	.wrapper {
+		.main {
+			flex: 1;
+			padding-left: 75px;
+			&__logo {
+				flex: 1;
+				padding-bottom: 330px;
+				img {
+					cursor: pointer;
+				}
+			}
+			&__tiitle {
+				flex: 2;
+				
+			}
+		}
+		.iphone {
+			flex: 1;
+			img {
+				top: 5%;
+				left: 25%;
+			}
+		}
+	}
+
+	.fourth {
+		.forcol {
+			padding: 100px 75px 150px 75px;
+		}
+	}
+
+	.six {
+		.color {
+			padding: 50px 75px 50px 75px;
+		}
+	}
+
+	.seven {
+		.buying {
+			padding: 100px 75px 150px 75px;
+		}
+	}
+
+
+}
+
+@media(min-width: 768px) and (max-width: 991px)  { 
+
+	.sidetext {
+		display: none;
+	}
+
+	.jumbotron {
+		height: 50vh;
+	}
+
+	.wrapper {
+		.main {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			&__logo {
+				flex: 1;
+				padding-bottom: 100px;
+				img {
+					cursor: pointer;
+				}
+			}
+			&__tiitle {
+				flex: 1;
+				padding-bottom: 25px;
+			}
+		}
+
+		.iphone {
+			flex: 0;
+			display: none;
+		}
+	}
+
+	.gallery {
+	    display: flex;
+	    flex-wrap: wrap;
+	    justify-content: center;
+
+		&__item {
+			position: relative;
+			img {
+				width: 100%;
+			}
+			
+			div {
+				padding: 15px;
+				color: #FFF;
+				position: absolute;
+				p {
+					color: #FFF;
+					font: 13px $osans;
+					font-weight: 400;
+				}
+			}
+		}
+	}
+
+	.bigpicture {
+		.container {
+			padding: 50px 0 50px 0;
+			display: flex;
+			flex-direction: column;
+			.headlines {
+				flex: 0.48;
+				p {
+					color: $greyfont;
+				}
+
+			}
+		}
+	}
+
+	.six {
+		.color {
+			padding: 50px 25px 50px 25px;
+		}
+	}
+
+	.seven {
+		.buying {
+			padding: 75px 25px 100px 25px;
+		}
+	}
+
+}
+
+@media(max-width: 767px) {
+
+	h2 {
+		font: 30px $osans;
+		font-weight: 300;
+		padding: 50px 15px 15px 15px;
+	}
+
+	h3 {
+		font: 24px $osans;
+		font-weight: 300;
+		padding: 15px;
+	}
+
+	h4 {
+		font: 14px $osans;
+		font-weight: 700;
+		padding: 40px 15px 0 15px;
+	}	
+
+	p {
+		padding: 15px;
+		color: $greyfont;
+	}
+
+	.headlines {
+		color: #FFF;
+		h1 {
+			font: 30px $osans;
+			font-weight: 300;
+			padding: 0 15px;
+		}
+		p {
+			font: 13px $osans;
+			font-weight: 400;
+			color: #FFF;
+		}
+	}
+
+	.sidetext {
+		display: none;
+	}
+
+	.jumbotron {
+		height: 50vh;
+	}
+
+	.wrapper {
+		.main {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			flex: 1;
+			&__logo {
+				flex: 1;
+				padding-bottom: 100px;
+				img {
+					cursor: pointer;
+				}
+			}
+			&__tiitle {
+				flex: 1;
+				padding-bottom: 25px;
+				text-align: center;
+			}
+		}
+
+		.iphone {
+			flex: 0;
+			display: none;
+		}
+	}
+
+	.text {
+		padding-bottom: 40px;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		&__left {
+			flex: 1;
+
+		}
+		&__right {
+			padding-top: 0;
+			flex: 1;
+
+		}
+	}
+
+	.fourth {
+		text-align: center;
+		.forcol {
+			padding: 50px 0 50px 0;
+			&__columns {
+				display: flex;
+				flex-direction: column;
+				text-align: center;
+				div {
+					flex: 1;
+					p {
+						color: $darkgreyfont;
+						font: 13px $osans;
+						font-weight: 600;
+						padding: 50px 15px 0 15px;
+					}
+					h4 {
+						color: $greyfont;
+						font-weight: 400;
+						padding: 15px 15px 0 15px;
+					}
+				}		
+			}
+		}
+	}
+
+	.gallery {
+	    display: flex;
+	    flex-wrap: wrap;
+	    justify-content: center;
+
+		&__item {
+			position: relative;
+			img {
+				width: 100%;
+			}
+			
+			div {
+				padding: 15px;
+				color: #FFF;
+				position: absolute;
+				p {
+					color: #FFF;
+					font: 13px $osans;
+					font-weight: 400;
+				}
+			}
+		}
+	}
+
+	.bigpicture {
+		.container {
+			padding: 75px 0 25px 0;
+			display: flex;
+			flex-direction: column;
+			.headlines {
+				padding: 50px 15px 5px 15px;
+				p {
+					color: #FFF;
+				}
+
+			}
+		}
+	}
+
+	.six {
+		.color {
+			color: #FFF;
+			padding: 50px 0 50px 0;
+			&__columns {
+				flex-direction: column;
+				display: flex;
+			}
+		}
+	}
+
+	.seven {
+		.buying {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			padding: 25px 0 25px 0;
+		}
+	}
+
+	.eight {
+		background-color: $footerbg;
+		padding: 25px 0 50px 0;
+		.footers {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+
+			&__left {
+				display: flex;
+				flex-direction: column;
+				text-align: center;
+				align-items: center;
+				justify-content: center;
+				padding: 15px;
+			}
+
+			&__right {
+				text-align: center;
+				justify-content: center;
+				padding-left: 0;
+				.input-wrapper {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					text-align: center;
+					flex-direction: column;
+
+					&__row {
+
+						input {
+							width: 100%;
+							border: none;
+							margin-left: 0;
+						}
+					}
+				}
+
+				p {
+					padding-right: 0;
+				}
+			}
+
+		}
+	}
+
 }
